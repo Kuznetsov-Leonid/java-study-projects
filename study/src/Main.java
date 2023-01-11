@@ -4,6 +4,11 @@ import Validator.AgeValidator;
 import BodyTemp.BodyTempTask;
 import ThreeNumber.ThreeNumberTask;
 import logicalOperators.LogicalOperationActions;
+import LookingForMaximum.Maximum;
+import ThroughThorns.Through;
+import HighAccuracy.Accuracy;
+import CompareStrings.Comparse;
+import CompareStrings.ComparingReference;
 public class Main {
     public static void main(String[] args) {
         carTest();
@@ -12,6 +17,11 @@ public class Main {
         BodyTempTest();
         ThreeNumberTest();
         LogicalTest();
+        MaximumTest();
+        ThroughTest();
+        AccuracyTest();
+        ComparseTest();
+        ComparingReferenceTest();
     }
 
     /**
@@ -80,5 +90,35 @@ public class Main {
     public static void LogicalTest(){
         LogicalOperationActions Action = new LogicalOperationActions();
         Action.LogicalOperationActionsTest();
+    }
+    /**
+     * @MaximumTest();
+     * Программа производит вычисление двух введённых чисел и выводит большее на экран.
+     * **/
+    public static void MaximumTest(){
+        Maximum m = new Maximum();
+        m.MaximumTask();
+    }
+    /**
+     * @ThroughTest();
+     * t.Club(int); - написан без тернарных операторов.
+     * t.ClubPro(int); - написан на тернарниках в инлайн.
+     * **/
+    public static void ThroughTest(){
+        Through t = new Through();
+        t.Club(27);
+        t.ClubPro(22);
+    }
+    public static void AccuracyTest(){
+        Accuracy a = new Accuracy();
+        a.AccuracyTask();
+    }
+    public static void ComparseTest(){
+        Comparse c = new Comparse();
+        c.ComparseTask();
+    }
+    public static void ComparingReferenceTest(){
+        ComparingReference cr = new ComparingReference();
+        cr.ComparingReferenceTask();
     }
 }
